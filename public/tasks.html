@@ -1,0 +1,9 @@
+<!DOCTYPE html><html><head><title></title><link rel="stylesheet" type="text/css" href="/devBuild/application.css"><script src="/devBuild/blueApp.js"></script><script type="text/javascript" charset="utf-8">var jQuery  = require("jqueryify");
+var exports = this;
+jQuery(function(){
+  var App = require("index");
+  window.src = { path: "" , build: "devBuild" }
+  exports.app =  new App({ el: $("body") }); 
+});
+
+</script></head><body class="fullHeight"><header class="nav-bar"><div class="constrained"><a href="/" class="label">AppBoot</a></div></header><div class="constrained"><div class="breadcrum"><div class="title">Tasks</div><div class="sub-title">The Tasks that we must do</div></div><aside></aside><article><h2>Frontend<h3>Configuration</h3><h3>Development Tools</h3><h3>Design</h3><h3>Test</h3><h3>MVC Framework</h3></h2><h2>API Server<h3>Authentication</h3><h3>Models</h3><h3> </h3></h2><h2>AWS Infrascture<h3>Frontend "Server"</h3><h3>ELB</h3><h3>API Server</h3></h2></article></div><hr><div class="constrained"></div></body></html>

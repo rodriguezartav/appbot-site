@@ -1,0 +1,22 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel="stylesheet", type="text/css", href="#{path}/#{build}/application.css")
+
+    script(src="#{path}/#{build}/blueApp.js")
+
+    script(type='text/javascript', charset='utf-8').
+      var jQuery  = require("jqueryify");
+      var exports = this;
+      jQuery(function(){
+        var App = require("index");
+        window.src = { path: "#{path}" , build: "#{build}" }
+        exports.app =  new App({ el: $("body") }); 
+      });
+
+
+  body.fullHeight
+    include components/header
+    block content
+    include components/footer

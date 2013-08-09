@@ -1,0 +1,13 @@
+language: node_js
+node_js: 
+- "0.10"
+deploy: 
+  provider: heroku
+  api_key: 02c1f6c9eef107695be651a70952dca8588f4bd6
+  app: appbot-site
+before_install: 
+- npm install -g grunt-cli
+env: 
+  global: 
+  - secure: amXp/I6/Xr21x8sc+hnOe4qLrHYDXFMuyy4/JZmod/yeiWktZSTn+Idku+XB8+lS6LymFFJaPl85fQqytOi6XROhJNpdmW8OUFqe1wvrO6Dy2tofyfJnIA9U0w4BFL7fzguv90/pRs6J8XMoebXONOoJE0NEV3wcGOtr64YjSSs=
+  - secure: cr0lynf7xlPQ/sCBp4A5F8AUDlrFeC+Lw/KkCBifXHZ3Qvk8A/0KhMpdVkFPrbSAuYBtskKscaa3wMsYMZkiKYBBRC1dFfINPPGGa4RXDzxJhdP7T8cxyAebLsXy/2JlPVUUb268+95w17/JTylc0+4PJXPPj1ZG3bwCtqMOhVw=

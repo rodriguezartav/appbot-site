@@ -1,0 +1,32 @@
+.nav-bar{
+  background-color: #444;
+  
+  a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .label{
+    display: inline-block;
+    width: 20%;
+    font-size: 22px;
+  }
+
+  .link{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 14px;
+    padding: 0px 5px 5px 4px;
+    &:hover{
+      border-bottom: #efefef 1px solid;
+    }
+    &:first-child{
+      margin-left: 0px;
+    }
+    &.active{
+      border-bottom: blue 2px solid;
+    }
+  }
+
+}
